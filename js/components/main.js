@@ -902,14 +902,14 @@ class Main extends ImmutableComponent {
               <div className='backforward'>
                 <LongPressButton
                   l10nId='backButton'
-                  className='back fa fa-angle-left'
+                  className='navigationButton backButton'
                   disabled={!activeFrame || !activeFrame.get('canGoBack')}
                   onClick={this.onBack}
                   onLongPress={this.onBackLongPress}
                 />
                 <LongPressButton
                   l10nId='forwardButton'
-                  className='forward fa fa-angle-right'
+                  className='navigationButton forwardButton'
                   disabled={!activeFrame || !activeFrame.get('canGoForward')}
                   onClick={this.onForward}
                   onLongPress={this.onForwardLongPress}
